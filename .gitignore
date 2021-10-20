@@ -1,0 +1,8 @@
+java/build/
+java/.gradle/
+.DS_Store
+.vscode/
+0/
+__pycache__/
+data/
+java/build/
