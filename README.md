@@ -1,6 +1,10 @@
-# Motivation
+# Introduction
 * You would find a bunch of common crawl projects [HERE](https://commoncrawl.org/the-data/examples/)
 * However, nobody use AWS Lambda + Java to achieve both local-storage performance and low pricing (rectify if it's wrong)
+* So, the key idea is
+    1) Deploy a micro service **on AWS Lambda** to do some basic download, untar & cleaning job, then  
+    2) invoke the service and fetch back the cleaned data **on local computer**.  
+![c3lambdaj architect](references/c3lambdaj.png)
 
 # AWS setup
 * Deploy the compiled `java.zip` to AWS Lambda ([ALSO SEE](java/README.md));  
